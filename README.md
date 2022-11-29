@@ -53,3 +53,4 @@ git clone link_do_repositório -> encontrado no botão code de um repositório
 git status -> exibe o que foi alterado/adicionado/excluido do projeto.
 
 isso foi editado no computador
+Isso foi feito direto no github
