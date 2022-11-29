@@ -27,12 +27,17 @@ Exemplo: chore_atualizada_a_versao_do_banco
 
 ## Comandos para trabalhar com branchs
 ### Criação de novas branchs
+O ideal é sempre criar as branchs a partir da main. Para manter a consistência da aplicação.
+#### Apenas cria uma nova Branch
+git branch nome_da_nova_branch
+Exemplo: git branch fix_botao_da_tela_login
+
+#### Cria uma nova Branch e vai para ela
 git checkout -b nome_da_nova_branch
 Exemplo: git checkout -b fix_botao_da_tela_login
-Obs: O ideal é sempre criar as branchs a partir da main.
 
 ### Listar as branchs existentes
-git branch list
+git branch --list
 
 ### Trocar de branch
 git switch nome_da_branch_que_deseja_entrar
@@ -43,3 +48,16 @@ Exemplo 02: git switch main
 git branch -D nome_da_branch_que_deseja_excluir
 Exemplo: git branch -D fix_botao_da_tela_login
 
+### Alterar o nome de uma Branch
+Primeiramente, precisa estar dentro da branch e depois usar o comando para renomear.
+git branch -m novo_nome_da_branch
+
+### Trazer as alterações de uma BRANCH para a MAIN.
+Primeiro, certifique-se que está dentro da branch main. Se não estiver use:
+git switch main
+
+Segundo, verifique se a branch main está atualizada com o comando
+git pull origin main
+
+Trazer os dados da branch para a main.
+git merge nome_da_branch
