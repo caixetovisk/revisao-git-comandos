@@ -51,3 +51,5 @@ git pull origin main -> pega alterações que estão no github, mas não estão 
 git clone link_do_repositório -> encontrado no botão code de um repositório
  
 git status -> exibe o que foi alterado/adicionado/excluido do projeto.
+
+Isso foi feito direto no github
